@@ -1,25 +1,26 @@
-Web - View
-==========
+# Web - View
 
-Basic
------
+## Basic
 
-    <video id="remoteVideo" autoplay controls></video>
-    <video id="localVideo" autoplay controls muted></video>
+```markup
+<video id="remoteVideo" autoplay controls></video>
+<video id="localVideo" autoplay controls muted></video>
+```
 
 If you add the *Controls* attribute, you can add video controls.
 
 For *Local Video*, you usually need to add the *muted* attribute to
 eliminate the howling of your voice again.
 
-Advanced
---------
+## Advanced
 
-    // Mute your own local video
-    pauseLocalVideo(bool)
-    // Mute the remote video
-    pauseRemoteVideo(bool)
-    // Mute the your own local audio and mic stream
-    muteLocalAudio(bool)
-    // Mute the remote audio stream
-    muteRemoteAudio(bool)
+```javascript
+// 자신의 영상을 mute하기
+pauseLocalVideo(bool)
+// 원격의 영상을 mute하기
+pauseRemoteVideo(bool)
+// 자신의 음성을 mute하기
+muteLocalAudio(bool)
+// 원격의 영상을 mute하기
+muteRemoteAudio(bool)
+```

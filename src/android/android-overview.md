@@ -1,14 +1,10 @@
-Android - Overview
-==================
+# Android - Overview
 
-Overview
---------
+## Overview
 
-*Remon* is the most important class in the *Remon SDK*. *Remon Config*
-and *Remon Observer* can be used for direct broadcasting and
-communication. *RemonCall* and *RemonCast* that contain complex and
-repetitive basic operations are provided. These enable broadcasting and
-communication functions to be implemented.
+![](../.gitbook/assets/android-overview.png)
+
+`Remon` is the most important class in the *Remon SDK*. `Remon Config` and `Remon Observer` can be used for direct broadcasting and communication. `RemonCall` and `RemonCast` that contain complex and repetitive basic operations are provided. These enable broadcasting and communication functions to be implemented.
 
 Resources
 ---------

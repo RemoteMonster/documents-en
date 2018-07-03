@@ -1,8 +1,6 @@
-RemoteMonster
-=============
+# RemoteMonster
 
-Welcome!
---------
+## Welcome!
 
 *RemoteMonster* provides a variety of functions that allow you to
 quickly and easily develop a service that apply broadcasting
@@ -14,8 +12,7 @@ server. Development will mainly be based on the SDK. For a complete
 overview of the SDK\'s configuration and flow, please see the following
 information.
 
-Development Procedures
-----------------------
+## Development Procedures
 
 ### Service Registration and Authentication Key Acquisition
 
