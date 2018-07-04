@@ -48,12 +48,12 @@ _Error_ refers to an exception in a broader area, including _Fail_. You will rec
 
 #### UserMediaDeviceError
 
-* The media has not been imported, especially Camera \(even though _Video_ is turned on\)\)
+* The media has not been imported, especially Camera \(even though video is turned on\)\)
 * The _Video Capture_ has not been imported.
 
 #### ICE\(Failed\)Error
 
 * A _peerConnection_ cannot be created
 * The SDP already exists, but its own SDP is created additionally
-* There is an _ICE_/_SDP_ parsing or addition failure
+* There is an _ICE_ /_SDP_ parsing or addition failure
 

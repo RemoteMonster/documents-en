@@ -29,7 +29,7 @@ const listener = {
 }
 ```
 
-You can get the quality data by implementing _onStat \(\),_ one of the methods of _listener,_ which you input as an input argument when you create a _Remon_ object. The _result.rating_ data obtained from the above _result_ is the integrated call quality information according to the network situation.
+You can get the quality data by implementing `onStat()`_,_ one of the methods of _listener,_ which you input as an input argument when you create a `Remon` object. The `result.rating` data obtained from the above `result` is the integrated call quality information according to the network situation.
 {% endtab %}
 
 {% tab title="Android" %}

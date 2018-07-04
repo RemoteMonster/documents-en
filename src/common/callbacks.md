@@ -14,7 +14,7 @@ Broadcasting and communication have appropriate events and flows. Knowing this w
 
 ### onInit\(token\)
 
-`onInit ()` means the SDK is ready to use _RemoteMonster_\'s broadcasting and communication infrastructure by successfully connecting to the _RemoteMonster_ server over the Internet. At this time, the authentication information, _token_, is returned. In many cases, there is no need for its use, and it is used for debugging.
+`onInit` means the SDK is ready to use _RemoteMonster_'s broadcasting and communication infrastructure by successfully connecting to the _RemoteMonster_ server over the Internet. At this time, the authentication information, _token_, is returned. In many cases, there is no need for its use, and it is used for debugging.
 
 {% tabs %}
 {% tab title="Web" %}
@@ -46,7 +46,7 @@ remonCast.onInit { (token) in
 
 ### onCreate\(channelId\) - livecast
 
-Only the caster uses this for the broadcasting service. At this time, the broadcast which the caster creates with `createRoom` is normally transmitted.
+Only the caster uses this for the broadcasting service. At this time, the broadcast which the caster creates with `create()` is normally transmitted.
 
 `onCreate` passes `channelId` as an argument. This is a unique identifier of this room, where viewers will use this `channelId` for connection and watch the broadcast.
 
@@ -87,7 +87,7 @@ remonCast.create()               // Server generate chid
 
 ### onJoin\(\) - livecast
 
-Only viewers use this in the broadcasting service. This will be called when a viewer becomes able to watch media after he/she successfully establishes a connection with `joinRoom`.
+Only viewers use this in the broadcasting service. This will be called when a viewer becomes able to watch media after he/she successfully establishes a connection with `join()`.
 
 {% tabs %}
 {% tab title="Web" %}
@@ -126,11 +126,11 @@ remonCast.join('MY_CHANNEL_ID')            // 'channelId' is mandatory
 
 ### onConnect\(channelId\) - communication
 
-This is used only for communication. This often behaves differently in the following cases: the `Caller` who requests a call by actually creating a channel, and the _Callee_ that responds to the request by accessing the created channel. In this case, the developer must manage the caller-callee status.
+This is used only for communication. This often behaves differently in the following cases: the _Caller_ who requests a call by actually creating a channel, and the _Callee_ that responds to the request by accessing the created channel. In this case, the developer must manage the caller-callee status.
 
-The caller uses `connectChannel` to create a new channel and wait for the other party to enter.
+The caller uses `connect()` to create a new channel and wait for the other party to enter.
 
-The `Callee` will connect to the channel that has already been created by `connectChannel`. At this time, the `channelId` of the created channel is required. If the connection is successful, `onConnect` will be generated. It is recommended that the `Callee` use `onComplete`, which occurs immediately.
+The _Callee_ will connect to the channel that has already been created by `connect()`. At this time, the `channelId` of the created channel is required. If the connection is successful, `onConnect` will be generated. It is recommended that the _Callee_ use `onComplete`, which occurs immediately.
 
 {% tabs %}
 {% tab title="Web" %}
@@ -209,7 +209,7 @@ remonCall.onComplte {
 
 ### onClose\(\)
 
-This is called when the user explicitly calls the `close ()` function or when the other party calls the `close ()` function. This is also called to terminate the connection when it is difficult to keep the connection due to a network error. The resources used by `Remon` have already been released.
+This is called when the user explicitly calls the `close()` function or when the other party calls the `close()` function. This is also called to terminate the connection when it is difficult to keep the connection due to a network error. The resources used by `Remon` have already been released.
 
 {% tabs %}
 {% tab title="Web" %}
@@ -286,7 +286,7 @@ Please refer to the following for the details.
 
 ### onStateChange\(state\)
 
-The method is used to handle all state changes in the following process: creating the first `Remon` object, creating a room, connecting to the room successfully, terminating the broadcasting and communication service. The `RemonState Enum` object tells the state changes. This is not generally used and is useful for debugging.
+The method is used to handle all state changes in the following process: creating the first `Remon` object, creating a room, connecting to the room successfully, terminating the broadcasting and communication service. The `RemonState`_Enum_ object tells the state changes. This is not generally used and is useful for debugging.
 
 `RemonState` has the following states:
 
@@ -321,7 +321,7 @@ N/A
 
 ### onStat\(report\)
 
-This is used for receiving a report of the communication/ broadcasting status. Each `report` comes in every `statInterval` interval that you have set when you create `remon`. Since it shows the media quality according to the network situation, it is useful for guiding the user through the handling of _loading a UI_.
+This is used for receiving a report of the communication or broadcasting status. Each `report` comes in every `statInterval` interval that you have set when you create `remon`. Since it shows the media quality according to the network situation, it is useful for guiding the user through the handling of _loading a UI_.
 
 {% tabs %}
 {% tab title="Web" %}
