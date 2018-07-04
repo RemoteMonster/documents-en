@@ -2,7 +2,7 @@
 
 ## Overview
 
-![](https://github.com/RemoteMonster/documents-en/tree/73f0c8da35a6ed76d11d15df7de8617ed1b0a140/src/.gitbook/assets/ios-overview.png)
+![](../.gitbook/assets/assets-lalxanhbadmg35tjnme-lguxznufvictum8-kvv-lguxbcjqfxdwtumrvnh-ios-overview.png)
 
 `Remon` is the core class in the _RemoteMonster SDK_. You can use the class `Remon` and implement `RemonDelegate` yourself to take advantage of the communication and broadcasting capabilities provided by `Remon`, but this will be a complicated and tedious task. Therefore, to enable SDK users to use `Remon` more easily and quickly, there are the following two classes available: `RemonController` containing complicated and repetitive basic operations and `RemonIBController` used for Interface Builder support. If you use the `RemonController` class, you only need to implement additional required parts instead of implementing complex `RemonDelegate` methods.
 

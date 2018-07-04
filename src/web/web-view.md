@@ -14,13 +14,13 @@ For _Local Video_, you usually need to add the _muted_ attribute to eliminate th
 ## Advanced
 
 ```javascript
-// 자신의 영상을 mute하기
+// Mute your own local video
 pauseLocalVideo(bool)
-// 원격의 영상을 mute하기
+// Mute the remote video
 pauseRemoteVideo(bool)
-// 자신의 음성을 mute하기
+// Mute the your own local audio and mic stream
 muteLocalAudio(bool)
-// 원격의 영상을 mute하기
+// Mute the remote audio stream
 muteRemoteAudio(bool)
 ```
 

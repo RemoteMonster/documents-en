@@ -2,7 +2,7 @@
 
 ## WebRTC Internals
 
-_webrtc-internals_ is a great tool to tackle the issues that arise from the _WebRTC_ service. If you are unfamiliar with this tool, you can run _webrtc-internals_ by open a WebRTC session from your Chrome browser, opening another tab, and typing _chrome://webrtc-internals/_ in the URL address bar.
+_webrtc-internals_ is a great tool to tackle the issues that arise from the _WebRTC_ service. If you are unfamiliar with this tool, you can run _webrtc-internals_ by open a WebRTC session from your Chrome browser, opening another tab, and typing `chrome://webrtc-internals/` in the URL address bar.
 
 _webrtc-internals_ can store _stats_ information about ongoing communication sessions in a large JSON file, and you can use it to look at the details as follows:
 
@@ -20,7 +20,7 @@ This is the most important interface to check the actual internal information.
 
 ### Overview
 
-![From testRTC, Copyright 2018 testRTC](https://github.com/RemoteMonster/documents-en/tree/73f0c8da35a6ed76d11d15df7de8617ed1b0a140/src/.gitbook/assets/201612-webrtc-internals-structure.png)
+![](../.gitbook/assets/assets-lalxanhbadmg35tjnme-lguxznufvictum8-kvv-lguxanqj_dzgxrse44u-201612-webrtc-internals-structure.png)
 
 1. It tells you how RTCPeerConnection is set, which STUN and TURN servers are used, and how its options are set.
 2. The left-hand side shows a trace of _PeerConnection_ object calls. That is, the methods of the _PeerConnection_ object are listed in the order in which they are called, including its arguments \(e.g. _createOffer_\) and its callback events \(e.g. _onicecandidate_\). This is so powerful that it can be useful to check where and why ICE failures happen and to decide where you need to install a TURN server.

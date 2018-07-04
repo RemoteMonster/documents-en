@@ -1,14 +1,13 @@
 # Web - Getting Started
 
-## Prerequisites (System Requirements)
+## Prerequisites
 
 * Web browser, front-end development environment
-* Modern browsers that support *WebRTC* (Web Real-Time Communication) 
+* Modern browsers that support _WebRTC_ \(Web Real-Time Communication\) 
 
 ## Creating and Configuring a New Project
 
-The *RemoteMonster SDK* works in a browser environment. Simply prepare
-for common front-end web development.
+The _RemoteMonster SDK_ works in a browser environment. Simply prepare for common front-end web development.
 
 ```bash
 npm init
@@ -20,7 +19,7 @@ npx http-server
 
 ## SDK Installation - npm
 
-*npm* can be used to easily install the SDK..
+_npm_ can be used to easily install the SDK..
 
 ```text
 npm i @remotemonster/sdk
@@ -36,8 +35,7 @@ npm i @remotemonster/sdk
 
 ## SDK Installation - Static Import
 
-[*jsDelivr CDN*](https://www.jsdelivr.com) can be used. Insert it into a
-HTML file as shown below.
+[_jsDelivr CDN_](https://www.jsdelivr.com) can be used. Insert it into a HTML file as shown below.
 
 {% code-tabs %}
 {% code-tabs-item title="index.html" %}
@@ -57,7 +55,7 @@ Now you are ready for development. Refer to the following for detailed developme
 
 ### Service Key
 
-To access the *RemoteMonster* broadcast and communications infrastructure through the SDK, a Service Id and Key are required. For simple testing and demonstration, you can skip this step. In order to develop and operate the actual service, refer to the following to acquire and apply the Service Id and Key.
+To access the _RemoteMonster_ broadcast and communications infrastructure through the SDK, a Service Id and Key are required. For simple testing and demonstration, you can skip this step. In order to develop and operate the actual service, refer to the following to acquire and apply the Service Id and Key.
 
 {% page-ref page="../common/service-key.md" %}
 
@@ -123,4 +121,3 @@ remonCall.connectCall('CHANNEL_ID')
 
 Or refer to the following for more details.
 
-{% page-ref page="../common/untitled.md" %}

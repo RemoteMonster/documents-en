@@ -24,8 +24,6 @@ With the package manager for each Browser, Android and iOS, it is very easy to m
 
 Please check the following details for each platform.
 
-{% page-ref page="web/web-getting-start.md" %}
-
 {% page-ref page="android/android-getting-started.md" %}
 
 {% page-ref page="ios/ios-getting-started.md" %}

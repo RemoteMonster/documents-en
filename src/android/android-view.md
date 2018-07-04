@@ -8,7 +8,7 @@ We provide two most important classes for layout: `org.webrtc.SurfaceViewRender`
 
 ### Basic
 
-You can use _SurfaceViewRender_ by placing it in the layout in your Android layout file like this:
+You can use `SurfaceViewRender` by placing it in the layout in your Android layout file like this:
 
 ```markup
 <RelativeLayout
