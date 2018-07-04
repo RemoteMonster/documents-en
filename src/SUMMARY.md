@@ -13,7 +13,7 @@
 ## Web
 
 * [Web - Overview](web/web-overview.md)
-* [Web - Getting Start](web/web-getting-start.md)
+* [Web - Getting Started](web/web-getting-started.md)
 * [Web - View](web/web-view.md)
 * [Web - Debug Inside](web/web-debug-inside.md)
 * [Web - Github](https://github.com/remotemonster/web-sdk/)
