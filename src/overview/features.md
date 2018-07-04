@@ -42,7 +42,9 @@ _RemoteMonster_\'s broadcast communication technology is provided in API form. Y
 * Quality
   * There are various performance options available according to the performance of each mobile device
   * There is an intelligent dynamic quality application engine according to the network situation
-  * There are various codecs available \(Video: _VP8, VP9, H.264_, Audio: _G.711, Opus \(Stereo\), ISAC \(Mono\)_\)
+  * There are various codecs available
+    * Video: _VP8, VP9, H.264_
+    * Audio: _G.711, Opus \(Stereo\), ISAC \(Mono\)_
 
 ### Easy Development
 
