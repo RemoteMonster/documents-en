@@ -20,12 +20,12 @@ The caster must see himself/herself with the local view. To view the broadcast, 
 
 {% tabs %}
 {% tab title="Web" %}
-```markup
+```javascript
 <!-- Caster : local view -->
 <video id="localVideo" autoplay muted></video>
 ```
 
-```markup
+```javascript
 <!-- Viewer : remote view -->
 <video id="remoteVideo" autoplay></video>
 ```
@@ -76,7 +76,7 @@ Please refer to the following for the details.
 
 ### Broadcast Creation
 
-You can create a broadcast using `RemonCast`\'s `create()` function. When the `create()` function is called, a broadcast channel that allows other users to connect to `Remon`\'s media server is created. At this point, a channel is created and returns its `channelId`, which allows viewers to access it.
+You can create a broadcast using `RemonCast`'s `create()` function. When the `create()` function is called, a broadcast channel that allows other users to connect to `Remon`'s media server is created. At this point, a channel is created and returns its `channelId`, which allows viewers to access it.
 
 {% tabs %}
 {% tab title="Web" %}
