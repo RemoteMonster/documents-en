@@ -4,12 +4,6 @@
 
 Proceed with project setting for each platform before broadcasting.
 
-{% page-ref page="../web/web-getting-start.md" %}
-
-{% page-ref page="../android/android-getting-start.md" %}
-
-{% page-ref page="../ios/ios-getting-start.md" %}
-
 ## Development
 
 The `RemonCast` class provides functions for creating and viewing broadcasts. The broadcast function can be used with the `create ()` and `join ()` functions of the `RemonCast` class.
@@ -22,10 +16,8 @@ Please refer to the following for the overall configuration and flow.
 
 ### View Registration
 
-The caster must see himself/herself with the local view. To view the broadcast, the viewer must connect the view in which the actual video is drawn. Register the *Local View* to let the caster to see himself/herself, and register the *Remote View* to make the caster visible to the viewer.
+The caster must see himself/herself with the local view. To view the broadcast, the viewer must connect the view in which the actual video is drawn. Register the _Local View_ to let the caster to see himself/herself, and register the _Remote View_ to make the caster visible to the viewer.
 
-{% tabs %}
-{% tab title="Web" %}
 ```markup
 <!-- Caster : local view -->
 <video id="localVideo" autoplay muted></video>
@@ -35,9 +27,7 @@ The caster must see himself/herself with the local view. To view the broadcast, 
 <!-- Watcher : remote view -->
 <video id="remoteVideo" autoplay></video>
 ```
-{% endtab %}
 
-{% tab title="Android" %}
 ```markup
 <!-- Caster : local view -->
 <com.remotemonster.sdk.PercentFrameLayout
@@ -63,18 +53,8 @@ The caster must see himself/herself with the local view. To view the broadcast, 
         android:layout_height="match_parent" />
 </com.remotemonster.sdk.PercentFrameLayout>
 ```
-{% endtab %}
 
-{% tab title="iOS" %}
-
-With Interface Builder, set your view. 
-If you have set up your preferences according to iOS - Getting Started,
-you have already registered your View. If you have not done yet, please
-refer to the following.
-
-{% page-ref page="../ios/ios-getting-start.md" %}
-{% endtab %}
-{% endtabs %}
+With Interface Builder, set your view. If you have set up your preferences according to iOS - Getting Started, you have already registered your View. If you have not done yet, please refer to the following.
 
 Please refer to the following for the details.
 
@@ -89,52 +69,6 @@ Please refer to the following for the details.
 You can create a broadcast using `RemonCast`\'s `create()` function. When the `create()` function is called, a broadcast channel that allows other users to connect to `Remon`\'s media server is created. At this point, a channel is created and returns its `channelId`, which allows viewers to access it.
 
 {% tabs %}
-{% tab title="Web" %}
-```javascript
-// <video id="localVideo" autoplay muted></video>
-let myChannelId
-
-const config = {
-  credential: {
-    serviceId: 'MY_SERVICE_ID',
-    key: 'MY_SERVICE_KEY'
-  },
-  view: {
-    local: '#localVideo'
-  },
-  media: {
-    sendonly: true
-  }
-}
-
-const listener = {
-  onCreate(channelId) {
-    myChannelId = channelId
-  }
-}
-​
-const caster = new Remon({ listener, config })
-caster.createCast()
-```
-{% endtab %}
-
-{% tab title="Android" %}
-```java
-caster = RemonCast.builder()
-    .serviceId("MY_SERVICE_ID")
-    .key("MY_SERVICE_KEY")
-    .context(CastActivity.this)
-    .localView(surfRendererlocal)        // local Video Renderer
-    .build();
-
-caster.onCreate((channelId) -> {
-    myChannelId = channelId;
-});
-
-caster.create();
-```
-{% endtab %}
-
 {% tab title="iOS" %}
 ```swift
 remonCast.create()
@@ -157,38 +91,9 @@ caster.create()
 
 ### Broadcast Viewing
 
-`RemonCast`\'s `joinRoom (channelId)` function allows you to participate in the broadcast. At this time, it is necessary to inform the `channelId` of the desired channel. Usually, the user selects through the entire list by referring to the *Channel* below.
+`RemonCast`\'s `joinRoom (channelId)` function allows you to participate in the broadcast. At this time, it is necessary to inform the `channelId` of the desired channel. Usually, the user selects through the entire list by referring to the _Channel_ below.
 
 {% tabs %}
-{% tab title="Web" %}
-```javascript
-// <video id="remoteVideo" autoplay></video>
-let myChannelId
-
-const config = {
-  credential: {
-    serviceId: 'MY_SERVICE_ID',
-    key: 'MY_SERVICE_KEY'
-  },
-  view: {
-    local: '#remoteVideo'
-  },
-  media: {
-    recvonly: true
-  }
-}
-
-const listener = {
-  onJoin() {
-    // Do something
-  }
-}
-​
-const viewer = new Remon({ listener, config })
-viewer.joinCast('MY_CHANNEL_ID')                  // myChnnelId from caster
-```
-{% endtab %}
-
 {% tab title="Android" %}
 ```java
 viewer = RemonCast.builder()
@@ -209,7 +114,7 @@ viewer.join("MY_CHANNEL_ID");                     // myChid from caster
 remonCast.join(myChannelId)                  // myChannelId from caster
 ```
 
-Or you can create it without *Interface Builder* as follows.
+Or you can create it without _Interface Builder_ as follows.
 
 ```swift
 let viewer = RemonCast()
@@ -231,31 +136,6 @@ viewer.join("MY_CHANNEL_ID")              // myChannelId from caster
 Callbacks are provided to assist in tracking various states during development.
 
 {% tabs %}
-{% tab title="Web" %}
-```javascript
-const listener = {
-  onInit() {
-
-const listener = {
-  onInit() {
-    // Things to do when remon is initialized, such as UI processing, etc.
-  },
-​  
-  onCreate(channelId) {
-    // Broadcast creation and watching preparation is complete
-  },
-​
-  onJoin() {
-    // Start watching
-  },
-​  
-  onClose() {
-    // End watching
-  }
-}
-```
-{% endtab %}
-
 {% tab title="Android" %}
 ```java
 remonCast = RemonCast.builder().build();
@@ -310,13 +190,6 @@ Please refer to the following for more information.
 When you create a broadcast, a channel is created with a unique `channelId`. This `channelId` allows viewers to access the created broadcast. At this time, the list of all channels being broadcasted can be viewed as follows.
 
 {% tabs %}
-{% tab title="Web" %}
-```javascript
-const remonCast = new Remon()
-const casts = await remonCast.fetchCasts()
-```
-{% endtab %}
-
 {% tab title="Android" %}
 ```java
 remonCast = RemonCast.builder().build();
@@ -348,13 +221,6 @@ Please refer to the following for more information.
 When all communication is finished, it is necessary to close the `RemonCast` object with `close()`. All communication resources and media stream resources are released by `close()`.
 
 {% tabs %}
-{% tab title="Web" %}
-```javascript
-const remonCast = new Remon()
-remonCast.close()
-```
-{% endtab %}
-
 {% tab title="Android" %}
 ```java
 remonCast = RemonCast.builder().build();
@@ -372,7 +238,7 @@ remonCast.close()
 
 ### Settings
 
-If you need more detailed settings when creating or watching a
-broadcast, please refer to the following.
+If you need more detailed settings when creating or watching a broadcast, please refer to the following.
 
 {% page-ref page="config.md" %}
+

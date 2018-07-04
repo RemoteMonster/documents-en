@@ -1,4 +1,4 @@
-# Real-time Quality Statistics Report
+# Realtime Quality Statistics Report
 
 ## Overview
 
@@ -10,18 +10,16 @@ Currently, this call quality data can be received once every 5 seconds.
 
 | levels | Quality | Remarks |
 | --- | --- | --- |
-| 1 | Very Good | |
-| 2 | Good | |
-| 3 | Poor | |
-| 4 | Very Poor | |
-| 5 | Broadcast/call disabled | |
+| 1 | Very Good |  |
+| 2 | Good |  |
+| 3 | Poor |  |
+| 4 | Very Poor |  |
+| 5 | Broadcast/call disabled |  |
 
 ## Usage
 
 {% tabs %}
 {% tab title="Web" %}
-
-
 ```javascript
 const listener = {
   onStat(result){
@@ -31,12 +29,7 @@ const listener = {
 }
 ```
 
-You can get the quality data by implementing *onStat (),* one of the
-methods of *listener,* which you input as an input argument when you
-create a *Remon* object. The *result.rating* data obtained from the
-above *result* is the integrated call quality information according to
-the network situation. {% endtab%}
-
+You can get the quality data by implementing _onStat \(\),_ one of the methods of _listener,_ which you input as an input argument when you create a _Remon_ object. The _result.rating_ data obtained from the above _result_ is the integrated call quality information according to the network situation.
 {% endtab %}
 
 {% tab title="Android" %}

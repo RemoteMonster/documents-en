@@ -2,11 +2,11 @@
 
 ## Overview
 
-*RemoteMonster* takes the `config` values in advance before creating the object.
+_RemoteMonster_ takes the `config` values in advance before creating the object.
 
 ## Basics
 
-The most basic things to do are specifying the *View* to be displayed on the screen, *Service Id*, and *Key*.
+The most basic things to do are specifying the _View_ to be displayed on the screen, _Service Id_, and _Key_.
 
 ### View
 
@@ -46,7 +46,7 @@ remonCall.localView = myLocalView
 {% endtab %}
 {% endtabs %}
 
-At this time, the *config* settings must be specified with *Views*. Please refer to the following.
+At this time, the _config_ settings must be specified with _Views_. Please refer to the following.
 
 {% page-ref page="../web/web-view.md" %}
 
@@ -56,7 +56,7 @@ At this time, the *config* settings must be specified with *Views*. Please refer
 
 ### Service Id, Key
 
-It is required to specify *Service Id* and *Key*.
+It is required to specify _Service Id_ and _Key_.
 
 {% tabs %}
 {% tab title="Web" %}
@@ -138,16 +138,13 @@ remonCall.onlyAudio = false             //default fasle
 
 ### Video Options
 
-`width` and `height` determine the resolution of the video to be sent to the other party. `width` and `height` is set to transmit at resolutions up to 640 and 480, but this setting is not necessarily to be observed. *WebRTC* basically maintains the quality by flexibly changing resolution and framerate according to the network/terminal status. Although the resolution may differ from the actual one, we try to match the ratio as much as possible.
+`width` and `height` determine the resolution of the video to be sent to the other party. `width` and `height` is set to transmit at resolutions up to 640 and 480, but this setting is not necessarily to be observed. _WebRTC_ basically maintains the quality by flexibly changing resolution and framerate according to the network/terminal status. Although the resolution may differ from the actual one, we try to match the ratio as much as possible.
 
-Browser supports video codecs *such as H.264, VP8, VP9, etc. *RemoteMonster* uses *H.264* as its default codec, and this setting can be changed if necessary.
+Browser supports video codecs _such as H.264, VP8, VP9, etc._ RemoteMonster _uses_ H.264\* as its default codec, and this setting can be changed if necessary.
 
-The `frameRate` entry determines how many frames per second to encode.
-About *15 fps* is also appropriate for an ordinary video call.
+The `frameRate` entry determines how many frames per second to encode. About _15 fps_ is also appropriate for an ordinary video call.
 
-`facingMode` determines which camera to use when the device has a front
-camera and a rear camera. Currently `facingMode` does not work properly
-in the mobile version of the Chrome browser.
+`facingMode` determines which camera to use when the device has a front camera and a rear camera. Currently `facingMode` does not work properly in the mobile version of the Chrome browser.
 
 {% tabs %}
 {% tab title="Web" %}
@@ -213,8 +210,7 @@ N/A
 
 ## Debug
 
-You can set *SILENT, ERROR, WARN, INFO, DEBUG, and VERBOSE.* You can
-also check more detailed logs as you go back.
+You can set _SILENT, ERROR, WARN, INFO, DEBUG, and VERBOSE._ You can also check more detailed logs as you go back.
 
 {% tabs %}
 {% tab title="Web" %}
@@ -240,3 +236,4 @@ remonCast.debugMode = true
 ```
 {% endtab %}
 {% endtabs %}
+

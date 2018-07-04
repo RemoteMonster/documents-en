@@ -7,10 +7,9 @@
 <video id="localVideo" autoplay controls muted></video>
 ```
 
-If you add the *Controls* attribute, you can add video controls.
+If you add the _Controls_ attribute, you can add video controls.
 
-For *Local Video*, you usually need to add the *muted* attribute to
-eliminate the howling of your voice again.
+For _Local Video_, you usually need to add the _muted_ attribute to eliminate the howling of your voice again.
 
 ## Advanced
 
@@ -24,3 +23,4 @@ muteLocalAudio(bool)
 // 원격의 영상을 mute하기
 muteRemoteAudio(bool)
 ```
+

@@ -4,7 +4,7 @@
 
 Only the simple code, `RemonCast` and `RemonCall`, can be used for communication and broadcasting services. Occasionally, UI handling and additional actions are required depending on your needs. Various Callbacks can be used for more detailed development as shown below.
 
-Broadcasting and communication have appropriate events and flows. Knowing this will help you use *Callback*s. Please refer to the following for the details.
+Broadcasting and communication have appropriate events and flows. Knowing this will help you use _Callback_s. Please refer to the following for the details.
 
 {% page-ref page="../overview/flow.md" %}
 
@@ -12,9 +12,9 @@ Broadcasting and communication have appropriate events and flows. Knowing this w
 
 ## Basics
 
-### onInit(token)
+### onInit\(token\)
 
-`onInit ()` means the SDK is ready to use *RemoteMonster*\'s broadcasting and communication infrastructure by successfully connecting to the *RemoteMonster* server over the Internet. At this time, the authentication information, *token*, is returned. In many cases, there is no need for its use, and it is used for debugging.
+`onInit ()` means the SDK is ready to use _RemoteMonster_\'s broadcasting and communication infrastructure by successfully connecting to the _RemoteMonster_ server over the Internet. At this time, the authentication information, _token_, is returned. In many cases, there is no need for its use, and it is used for debugging.
 
 {% tabs %}
 {% tab title="Web" %}
@@ -44,7 +44,7 @@ remonCast.onInit { (token) in
 {% endtab %}
 {% endtabs %}
 
-### onCreate(channelId) - livecast
+### onCreate\(channelId\) - livecast
 
 Only the caster uses this for the broadcasting service. At this time, the broadcast which the caster creates with `createRoom` is normally transmitted.
 
@@ -85,7 +85,7 @@ remonCast.create()               // Server generate chid
 {% endtab %}
 {% endtabs %}
 
-### onJoin() - livecast
+### onJoin\(\) - livecast
 
 Only viewers use this in the broadcasting service. This will be called when a viewer becomes able to watch media after he/she successfully establishes a connection with `joinRoom`.
 
@@ -124,9 +124,9 @@ remonCast.join('MY_CHANNEL_ID')            // 'channelId' is mandatory
 {% endtab %}
 {% endtabs %}
 
-### onConnect(channelId) - communication
+### onConnect\(channelId\) - communication
 
-This is used only for communication. This often behaves differently in the following cases: the `Caller` who requests a call by actually creating a channel, and the *Callee* that responds to the request by accessing the created channel. In this case, the developer must manage the caller-callee status.
+This is used only for communication. This often behaves differently in the following cases: the `Caller` who requests a call by actually creating a channel, and the _Callee_ that responds to the request by accessing the created channel. In this case, the developer must manage the caller-callee status.
 
 The caller uses `connectChannel` to create a new channel and wait for the other party to enter.
 
@@ -175,9 +175,9 @@ remonCast.connect("MY_CHANNEL_ID")
 {% endtab %}
 {% endtabs %}
 
-### onComplete() - communication
+### onComplete\(\) - communication
 
-This is used for communication only. This will be called when media transfer becomes possible after the connection between the *Caller* and the *Callee* is successfully established.
+This is used for communication only. This will be called when media transfer becomes possible after the connection between the _Caller_ and the _Callee_ is successfully established.
 
 {% tabs %}
 {% tab title="Web" %}
@@ -207,7 +207,7 @@ remonCall.onComplte {
 {% endtab %}
 {% endtabs %}
 
-### onClose()
+### onClose\(\)
 
 This is called when the user explicitly calls the `close ()` function or when the other party calls the `close ()` function. This is also called to terminate the connection when it is difficult to keep the connection due to a network error. The resources used by `Remon` have already been released.
 
@@ -246,7 +246,7 @@ remonCast.close()
 {% endtab %}
 {% endtabs %}
 
-### onError(error)
+### onError\(error\)
 
 This is called when an error occurs while `Remon` is running.
 
@@ -284,7 +284,7 @@ Please refer to the following for the details.
 
 ## Advanced
 
-### onStateChange(state)
+### onStateChange\(state\)
 
 The method is used to handle all state changes in the following process: creating the first `Remon` object, creating a room, connecting to the room successfully, terminating the broadcasting and communication service. The `RemonState Enum` object tells the state changes. This is not generally used and is useful for debugging.
 
@@ -292,12 +292,12 @@ The method is used to handle all state changes in the following process: creatin
 
 | Values | Description | Remarks |
 | --- | --- | --- |
-| INIT | Initiate | |
-| WAIT | Create a Channel | |
-| CONNECT | Channel, connect to the room | |
-| COMPLETE | Connection complete | |
-| FAIL | Failed | |
-| CLOSE | End | |
+| INIT | Initiate |  |
+| WAIT | Create a Channel |  |
+| CONNECT | Channel, connect to the room |  |
+| COMPLETE | Connection complete |  |
+| FAIL | Failed |  |
+| CLOSE | End |  |
 
 {% tabs %}
 {% tab title="Web" %}
@@ -319,9 +319,9 @@ N/A
 {% endtab %}
 {% endtabs %}
 
-### onStat(report)
+### onStat\(report\)
 
-This is used for receiving a report of the communication/ broadcasting status. Each `report` comes in every `statInterval` interval that you have set when you create `remon`. Since it shows the media quality according to the network situation, it is useful for guiding the user through the handling of *loading a UI*.
+This is used for receiving a report of the communication/ broadcasting status. Each `report` comes in every `statInterval` interval that you have set when you create `remon`. Since it shows the media quality according to the network situation, it is useful for guiding the user through the handling of _loading a UI_.
 
 {% tabs %}
 {% tab title="Web" %}
@@ -355,4 +355,5 @@ remoCall.onRemonStatReport{ (result) in
 
 Please refer to the following for the details.
 
-{% page-ref page="stat-report.md" %}
+{% page-ref page="realtime-quality-statistics-report.md" %}
+

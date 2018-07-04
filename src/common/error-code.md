@@ -2,25 +2,21 @@
 
 ## Overview
 
-The *RemoteMonster* APIs have two major exceptions: *Fail* and *Error*.
+The _RemoteMonster_ APIs have two major exceptions: _Fail_ and _Error_.
 
 ### Fail
 
-*Fail* refers to an exception that mainly occurs during communication.
-*Fail* occurs when the communication connection is not established, when
-the connection is disconnected, or when the connection is unstable. You
-can receive Fail events with the `onStateChange` callback method.
+_Fail_ refers to an exception that mainly occurs during communication. _Fail_ occurs when the communication connection is not established, when the connection is disconnected, or when the connection is unstable. You can receive Fail events with the `onStateChange` callback method.
 
 ### Error
 
-*Error* refers to an exception in a broader area, including *Fail*. You
-will receive an Error code through the `onError` callback method.
+_Error_ refers to an exception in a broader area, including _Fail_. You will receive an Error code through the `onError` callback method.
 
 #### InvalidParameterError
 
 * When a parameter given for `new Remon` is invalid
-  * If there is no *Key, Service Id, Local View, Remote View*, or if there is no `config` or *Callback*, or if the parameter is too long
-* An incorrect value is given at connectChannel (if the length is less than 1 or too long(100 or more))
+  * If there is no _Key, Service Id, Local View, Remote View_, or if there is no `config` or _Callback_, or if the parameter is too long
+* An incorrect value is given at connectChannel \(if the length is less than 1 or too long\(100 or more\)\)
 * `UnsupportedPlatformError`
   * If the Browser does not support
   * If the Version does not support
@@ -33,8 +29,8 @@ will receive an Error code through the `onError` callback method.
   * Since the web server is running, it delivers the wrong page
 * The web server is not operating
   * 400 Error
-* There is a problem with the *Web Socket* and *RESTful* host
-* If an error occurs during the *Web Socket* startup
+* There is a problem with the _Web Socket_ and _RESTful_ host
+* If an error occurs during the _Web Socket_ startup
 
 #### WebSocketError: websocket communication errors
 
@@ -43,8 +39,8 @@ will receive an Error code through the `onError` callback method.
 
 #### ConnectChannelFailedError
 
-* There is no channel information in the return of *create / connect*.
-* The server will automatically switch to *onCreateChannel* if there is an attempt to connect when the *channel* expires or when there is no channel.
+* There is no channel information in the return of _create / connect_.
+* The server will automatically switch to _onCreateChannel_ if there is an attempt to connect when the _channel_ expires or when there is no channel.
 
 #### BusyChannelError
 
@@ -52,11 +48,12 @@ will receive an Error code through the `onError` callback method.
 
 #### UserMediaDeviceError
 
-* The media has not been imported, especially Camera (even though *Video* is turned on))
-* The *Video Capture* has not been imported.
+* The media has not been imported, especially Camera \(even though _Video_ is turned on\)\)
+* The _Video Capture_ has not been imported.
 
-#### ICE(Failed)Error
+#### ICE\(Failed\)Error
 
-* A *peerConnection* cannot be created
+* A _peerConnection_ cannot be created
 * The SDP already exists, but its own SDP is created additionally
-* There is an *ICE*/*SDP* parsing or addition failure
+* There is an _ICE_/_SDP_ parsing or addition failure
+

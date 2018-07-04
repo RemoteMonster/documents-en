@@ -2,20 +2,14 @@
 
 ## Overview
 
-*RemoteMonster* provides resources shared by users during broadcasting
-and communication under the name channel. This channel is created the
-first time you create it, provides each unique Id, and gets or retrieves
-a list of them to connect to a specific channel. In addition, you can
-assign a nickname, *Name,* to your channel in order to make it easier to
-use.
+_RemoteMonster_ provides resources shared by users during broadcasting and communication under the name channel. This channel is created the first time you create it, provides each unique Id, and gets or retrieves a list of them to connect to a specific channel. In addition, you can assign a nickname, _Name,_ to your channel in order to make it easier to use.
 
 |  | Class | Id\(unique\) | Name | Methods | Callbacks |
 | --- | --- | --- |
 | Livecast | remonCast | ChannelId | ChannelName | `create`, `join`, `fetchCasts` | `onCreate`, `onJoin` |
 | Communication | remonCall | ChannelId | ChannelName | `connect`, `fetchCalls` | `onConnect`, `onComplete` |
 
-Please refer to the following for the overall flow and corresponding
-*Callback*s.
+Please refer to the following for the overall flow and corresponding _Callback_s.
 
 {% page-ref page="../overview/flow.md" %}
 
@@ -23,8 +17,7 @@ Please refer to the following for the overall flow and corresponding
 
 ## Livecast
 
-Here is how to get a list of broadcasts on the air. It is commonly used
-in UIs to find broadcasts to enter from the list.
+Here is how to get a list of broadcasts on the air. It is commonly used in UIs to find broadcasts to enter from the list.
 
 {% tabs %}
 {% tab title="Web" %}
@@ -116,3 +109,4 @@ remonCall.connect(myChannelId)
 ```
 {% endtab %}
 {% endtabs %}
+
