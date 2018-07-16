@@ -2,7 +2,7 @@
 
 ## Introduction
 
-We provide two most important classes for layout: `SurfaceViewRender` which is a _View_ used for image output. and `PercentFrameLayout` which helps to efficiently lay out `the SurfaceViewRender` in `RelativeLayout`. Given these classes, `SurfaceViewRender` is the most important; therefore, let\'s first look at it.
+We provide two most important classes for layout: `SurfaceViewRender` which is a _View_ used for image output and `PercentFrameLayout` which helps to efficiently lay out `SurfaceViewRender` in `RelativeLayout`. Given these classes, `SurfaceViewRender` is the most important; therefore, let's first look at it.
 
 ## SurfaceViewRender
 
