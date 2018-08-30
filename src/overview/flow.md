@@ -12,7 +12,7 @@ The broadcasting service is divided into the following cases: simply creating a 
 * Viewer: the party watching the broadcast
 
 |  | Initialization | Channel Creation | Channel Connection | Termination |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | Caster Event | ready RemoteMonster | `create()` | - | `close()`, disconnect |
 | Caster Callback | `onInit` | `onCreate` | - | `onClose` |
 | Viewer Event | ready RemoteMonster | - | `join('channelId')` | `cloase()`, disconnect |
@@ -26,7 +26,7 @@ The communication service is divided into the following acts: requesting a call 
 * Callee : the party responding to the communication request
 
 |  | Initialization | Channel Creation | Channel Connection | Termination |  |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | Caller Event | ready RemoteMonster | `connect()` | Wait callee | Caller, Callee Connected | `close()`, disconnect |
 | Caller Callback | `onInit` | `onConnect` | - | `onComplete` | `onClose` |
 | Callee Event | ready RemoteMonster | - | `connect('channelId')` | Caller, Callee Connected | `close()`, disconnect |

@@ -291,7 +291,7 @@ The method is used to handle all state changes in the following process: creatin
 `RemonState` has the following states:
 
 | Values | Description | Remarks |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | INIT | Initiate |  |
 | WAIT | Create a Channel |  |
 | CONNECT | Channel, connect to the room |  |

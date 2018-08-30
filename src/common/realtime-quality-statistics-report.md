@@ -9,7 +9,7 @@ Users sometimes complain about their service problems even if the call quality i
 Currently, this call quality data can be received once every 5 seconds.
 
 | levels | Quality | Remarks |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | 1 | Very Good |  |
 | 2 | Good |  |
 | 3 | Poor |  |

@@ -3,7 +3,7 @@
 ## Features
 
 | Item | Details |  |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | 1: 1 voice call | Supported |  |
 | 1: 1 video call | Supported |  |
 | N: N video / audio call | Supports 4: 4 up to 8: 8. Depends on device performance and quality definition |  |
@@ -19,7 +19,7 @@
 ## Environments
 
 | Items | Details |  |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Web - Chrome | Supports both Desktop and Android |  |
 | Web - Firefox | Supports both Desktop and Android |  |
 | Web - Whale | supported |  |
@@ -31,7 +31,7 @@
 ## Media and Networks
 
 | Types | Items | Details |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Video | Codec | H.264 \(default\), VP8, VP9 |
 |  | Networks | At least 300kbps or higher |
 |  | Processing Power | Dual-core or higher. According to PassMark Software-CPU Benchmark Charts, it is recommended that a PC with a score of 1,000 or higher |

@@ -5,7 +5,7 @@
 _RemoteMonster_ provides resources shared by users during broadcasting and communication under the name channel. This channel is created the first time you create it, provides each unique Id, and gets or retrieves a list of them to connect to a specific channel. In addition, you can assign a name to your channel in order to make it easier to use.
 
 |  | Class | Id\(unique\) | Name | Methods | Callbacks |
-| --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | Livecast | remonCast | ChannelId | ChannelName | `create`, `join`, `fetchCasts` | `onCreate`, `onJoin` |
 | Communication | remonCall | ChannelId | ChannelName | `connect`, `fetchCalls` | `onConnect`, `onComplete` |
 
