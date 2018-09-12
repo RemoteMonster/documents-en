@@ -82,17 +82,39 @@ Now you are ready for development. Refer to the following for detailed developme
 
 **Broadcast Transmission**
 
+{% tabs %}
+{% tab title="Swift" %}
 ```swift
 let caster = RemonCast()
 caster.create()
 ```
+{% endtab %}
+
+{% tab title="Objc" %}
+```objectivec
+RemonCast *caster = [[RemonCast alloc] init];
+[caster create:nil]; //nil or RemonConfig
+```
+{% endtab %}
+{% endtabs %}
 
 **Broadcast Viewing**
 
+{% tabs %}
+{% tab title="Swift" %}
 ```swift
 let viewer = RemonCast()
 viewer.join("CHANNEL_ID")
 ```
+{% endtab %}
+
+{% tab title="Objc" %}
+```objectivec
+RemonCast *viewer = [[RemonCast alloc] init];
+[viewer joinWithChId:@"CHANNEL_ID" AndConfig:nil]; //nil or RemonConfig
+```
+{% endtab %}
+{% endtabs %}
 
 Or refer to the following for more details.
 
@@ -102,10 +124,21 @@ Or refer to the following for more details.
 
 `RemonCall` can make communication functions easy and fast
 
+{% tabs %}
+{% tab title="Swift" %}
 ```swift
 let remonCall = RemonCall()
 remonCall.connect("CHANNEL_ID")            // Communication
 ```
+{% endtab %}
+
+{% tab title="Objc" %}
+```swift
+RemonCall *remonCall = [[RemonCall alloc] init];
+[remonCall connect:@"CHANNEL_ID" :nil];
+```
+{% endtab %}
+{% endtabs %}
 
 Or refer to the following for more details.
 

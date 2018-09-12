@@ -42,13 +42,22 @@ You can get the quality data by implementing `onStat()`_,_ one of the methods of
 ```
 {% endtab %}
 
-{% tab title="iOS" %}
+{% tab title="Swift" %}
 ```swift
 let remonCall = RemonCall()
 remoCall.onRemonStatReport{ (stat) in 
     let rating = stat.getRttRating()
     // Do something
 }
+```
+{% endtab %}
+
+{% tab title="Objc" %}
+```objectivec
+[self.remonCast onRemonStatReportWithBlock:^(RemonStatReport * _Nonnull stat) {
+    RatingValue *rating = [stat getRttRating];
+    // Do something
+}];
 ```
 {% endtab %}
 {% endtabs %}
