@@ -27,6 +27,8 @@ Add `pod 'RemoteMonster', '~> 2.0'` to the `Podfile` of the project in which you
 {% code-tabs-item title="Podfile" %}
 ```text
 target 'MyApp' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
   pod 'RemoteMonster', '~> 2.0'
 end
 ```
