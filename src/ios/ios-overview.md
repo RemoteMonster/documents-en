@@ -10,13 +10,13 @@
 
 ### Downloads, Change Log, Examples
 
-{% embed data="{\"url\":\"https://github.com/remotemonster/ios-sdk\",\"type\":\"link\",\"title\":\"RemoteMonster/ios-sdk\",\"description\":\"ios-sdk - RemoteMonster iOS SDK & examples\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars2.githubusercontent.com/u/20677626?s=400&v=4\",\"width\":400,\"height\":400,\"aspectRatio\":1}}" %}
+{% embed url="https://github.com/remotemonster/ios-sdk" %}
 
 All information about the _RemoteMonster iOS SDK_ is available. Check various code examples.
 
 ### Reference Document
 
-{% embed data="{\"url\":\"https://remotemonster.github.io/ios-sdk/\",\"type\":\"link\",\"title\":\"  Reference\"}" %}
+{% embed url="https://remotemonster.github.io/ios-sdk/" %}
 
 There is a detailed description of the SDK features.
 

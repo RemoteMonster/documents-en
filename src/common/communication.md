@@ -1,10 +1,10 @@
 # Communication
 
-## Default settings {#undefined}
+## Default settings <a id="undefined"></a>
 
 Proceed with project setting for each platform before communication.
 
-## Development {#undefined-1}
+## Development <a id="undefined-1"></a>
 
 The `RemonCll` class provides functions for communication. The communication function can be used with the `connect()` function of the `RemonCall` class.
 
@@ -163,7 +163,7 @@ RemonCall *caller = [[RemonCall alloc] init];
 {% endtab %}
 {% endtabs %}
 
-### Get a call {#undefined-3}
+### Get a call <a id="undefined-3"></a>
 
 `RemonCall`'s `connectChannel(channelId)` function allows you to participate in the communication. At this time, it is necessary to inform the `channelId` of the desired channel.
 
@@ -237,7 +237,7 @@ RemonCall *callee = [[RemonCall alloc] init];
 {% endtab %}
 {% endtabs %}
 
-### Callbacks {#observer}
+### Callbacks <a id="observer"></a>
 
 Callbacks are provided to assist in tracking various states during development.
 
@@ -335,7 +335,7 @@ Please refer to the following for more information.​
 
 {% page-ref page="callbacks.md" %}
 
-### Channel {#channels}
+### Channel <a id="channels"></a>
 
 When you create a communication, a channel is created with a unique `channelId`. This `channelId` allows the other to access the created communication. At this time, the list of all channels being communication can be viewed as follows.
 
@@ -383,7 +383,7 @@ Please refer to the following for more information.
 
 {% page-ref page="channel.md" %}
 
-### Termination {#undefined-4}
+### Termination <a id="undefined-4"></a>
 
 When all communication is finished, it is necessary to close the `RemonCall` object with `close()`. All communication resources and media stream resources are released by `close()`.
 
@@ -417,7 +417,7 @@ RemonCall *remonCall = [[RemonCall alloc]init];
 {% endtab %}
 {% endtabs %}
 
-### Setting {#undefined-5}
+### Setting <a id="undefined-5"></a>
 
 If you need more detailed settings when creating or watching a communication, please refer to the following.
 

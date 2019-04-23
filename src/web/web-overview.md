@@ -8,13 +8,13 @@ The SDK is used for the web. It works in the browser.
 
 ### Downloads, Change Log, Examples
 
-{% embed data="{\"url\":\"https://github.com/remotemonster/web-sdk/\",\"type\":\"link\",\"title\":\"RemoteMonster/web-sdk\",\"description\":\"web-sdk - RemoteMonster web SDK & examples\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars2.githubusercontent.com/u/20677626?s=400&v=4\",\"width\":400,\"height\":400,\"aspectRatio\":1}}" %}
+{% embed url="https://github.com/remotemonster/web-sdk/" %}
 
 All information about the _RemoteMonster Web SDK_ is available. Check various code examples.
 
 ### Reference Document
 
-{% embed data="{\"url\":\"https://remotemonster.github.io/web-sdk/docs/\",\"type\":\"link\",\"title\":\"@remotemonster/sdk\",\"description\":\"RemoteMonster Web SDK\"}" %}
+{% embed url="https://remotemonster.github.io/web-sdk/docs/" %}
 
 There is a detailed description of the SDK features.
 

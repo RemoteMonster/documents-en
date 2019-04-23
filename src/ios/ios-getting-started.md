@@ -43,7 +43,7 @@ $ pod install
 
 First, download the latest version of the iOS SDK via the link below.
 
-{% embed data="{\"url\":\"https://github.com/remotemonster/ios-sdk\",\"type\":\"link\",\"title\":\"RemoteMonster/ios-sdk\",\"description\":\"ios-sdk - RemoteMonster iOS SDK & examples\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars2.githubusercontent.com/u/20677626?s=400&v=4\",\"width\":400,\"height\":400,\"aspectRatio\":1}}" %}
+{% embed url="https://github.com/remotemonster/ios-sdk" %}
 
 There are two frameworks when I unzip the downloaded _RemoteMonster iOS SDK_. Drag and drop each _Framework_ from the _Finder_ to the _Project Tree_ pane. You will then see the _RemoteMonster SDK_ recognized as a framework.
 
@@ -62,7 +62,7 @@ With `InterfaceBuilder`, `Remon` can be configured by using `RemonIBController`.
 
 {% page-ref page="../common/service-key.md" %}
 
-![](../.gitbook/assets/assets-lalxanhbadmg35tjnme-lguxznufvictum8-kvv-lguxcoxn8ud-p0oah4p-basic_config.png)
+![](../.gitbook/assets/assets_-lalxanhbadmg35tjnme_-ld6qhxe4uifrqyin4nc_-ld6qipiwo_7ear1le04_basic_config__3_%20%281%29.png)
 
 * Place `View` at the desired location in the desired scene in the storyboard, and bind it to the `remoteView` and `localView` of the `RemonIBController`.
 
@@ -162,5 +162,5 @@ If you need to constantly connect to the SDK in the background, you can set the 
 
 Please refer to the following for background mode support.
 
-{% embed data="{\"url\":\"https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html\",\"type\":\"link\",\"title\":\"Background Execution\",\"description\":\"Introduces iOS and describes the development process for iOS applications.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://developer.apple.com/favicon.ico\",\"aspectRatio\":0}}" %}
+{% embed url="https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html" %}
 

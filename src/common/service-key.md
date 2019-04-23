@@ -8,7 +8,7 @@ In order to use _RemoteMonster_ effectively, you need to acquire your _Service I
 
 Click the `Apply` button on the website below to fill out the application form.
 
-{% embed data="{\"url\":\"https://remotemonster.com\",\"type\":\"link\",\"title\":\"RemoteMonster\",\"icon\":{\"type\":\"icon\",\"url\":\"https://uploads-ssl.webflow.com/5ae923e519474e392b0c80fc/5b02226459e4c8782a772e2f\_remon\_logo-09.png\",\"aspectRatio\":0},\"caption\":\"RemoteMonster Homepage\"}" %}
+{% embed url="https://remotemonster.com" caption="RemoteMonster Homepage" %}
 
 You will receive your Service ID and Key by email within 24 hours after you fill out the application form. When you apply for the service use, please be sure to use a valid e-mail address which can be used for responding to your request.
 

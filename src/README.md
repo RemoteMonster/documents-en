@@ -12,7 +12,7 @@ To develop this functionality, you will use the APIs provided by the _RemoteMons
 
 Complete registration for service development from the _RemoteMonster_ website. _RemoteMonster_ issues an authentication key via e-mail.
 
-{% embed data="{\"url\":\"https://remotemonster.com\",\"type\":\"link\",\"title\":\"RemoteMonster\",\"icon\":{\"type\":\"icon\",\"url\":\"https://uploads-ssl.webflow.com/5ae923e519474e392b0c80fc/5b02226459e4c8782a772e2f\_remon\_logo-09.png\",\"aspectRatio\":0},\"caption\":\"RemoteMonster Homepage\"}" %}
+{% embed url="https://remotemonster.com" caption="RemoteMonster Homepage" %}
 
 Please refer to the following for details.
 
@@ -34,7 +34,7 @@ _RemoteMonster_ provides its community and various code samples for easy develop
 
 Check out the platform-specific examples, demos, and reference documentations on the following _RemoteMonster Github_ website.
 
-{% embed data="{\"url\":\"https://github.com/remotemonster\",\"type\":\"link\",\"title\":\"remotemonster\",\"description\":\"GitHub is where people build software. More than 27 million people use GitHub to discover, fork, and contribute to over 80 million projects.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars1.githubusercontent.com/u/20677626?s=280&v=4\",\"width\":280,\"height\":280,\"aspectRatio\":1},\"caption\":\"RemoteMonster Github Repository\"}" %}
+{% embed url="https://github.com/remotemonster" caption="RemoteMonster Github Repository" %}
 
 ### Operation
 

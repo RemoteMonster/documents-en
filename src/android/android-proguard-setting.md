@@ -6,7 +6,7 @@ description: >-
 
 # Android - ProGuard Setting
 
-## gradle.build {#gradle-build}
+## gradle.build <a id="gradle-build"></a>
 
 gradle.build
 
@@ -27,7 +27,7 @@ buildTypes {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-## proguard-rules.pro {#proguard-rules-pro}
+## proguard-rules.pro <a id="proguard-rules-pro"></a>
 
 proguard-rules.pro
 
